@@ -1,16 +1,18 @@
 let pos = 0;
+let direction = 0;
+const pacMen = [];
 const pacArray = [
   ['PacMan1.png', 'PacMan2.png'],
   ['PacMan3.png', 'PacMan4.png'],
 ];
-let direction = 0;
-const pacMen = [];
+
 function setToRandom(scale) {
   return {
     x: Math.random() * scale,
     y: Math.random() * scale,
   };
 }
+
 function makePac() {
   let velocity = setToRandom(10);
   let position = setToRandom(200);
@@ -27,6 +29,7 @@ function makePac() {
     newimg,
   };
 }
+
 function update() {
   pacMen.forEach((item) => {
     checkCollisions(item);
@@ -37,6 +40,7 @@ function update() {
   });
   setTimeout(update, 20);
 }
+
 function checkCollisions(item) {
   if (item.position.x + item.velocity.x + item.newimg.width > window.innerWidth ||
   item.position.x < 0) {
@@ -46,9 +50,11 @@ function checkCollisions(item) {
     item.velocity.y = -item.velocity.y;
   }
 }
+
 function makeOne() {
   pacMen.push(makePac());
 }
+
 if (typeof module !== 'undefined') {
   module.exports = { checkCollisions, update, pacMen };
 }
