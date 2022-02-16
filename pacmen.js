@@ -1,10 +1,10 @@
 let pos = 0;
-let direction = 0;
-const pacMen = [];
 const pacArray = [
   ['PacMan1.png', 'PacMan2.png'],
   ['PacMan3.png', 'PacMan4.png'],
 ];
+let direction = 0;
+const pacMen = [];
 
 function setToRandom(scale) {
   return {
