@@ -1,7 +1,7 @@
 # PacMen
 ## This project creates PacMan projectiles that move around the screen with random direction and velocity, while staying within the boundaries of the screen edges. 
 
-#### To run this project locally download the html file, js file, and PacMan1.png. To view in your broswer, navigate to the GitHub Page for this project. https://hilaryvoegeli.github.io/PacMen/
+#### To run: clone the repository, drag and drop the HTML file into your web browser. Or navigate to the GitHub Page: https://hilaryvoegeli.github.io/PacMen/
 #### In the future it would be fun if the pacmen faced the direction they were traveling. 
 
 ###### License information: MIT. See license document. 
